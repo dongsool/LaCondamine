@@ -1,0 +1,13 @@
+lc_agenda:
+    resource: "@LcAgendaBundle/Resources/config/routing.yml"
+    prefix:   /
+
+lc_agenda:
+    resource: "@LCAgendaBundle/Resources/config/routing.xml"
+    prefix:   /
+
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation
+ancarebeca_fullcalendar:
+    resource: "@FullCalendarBundle/Resources/config/routing.yml"

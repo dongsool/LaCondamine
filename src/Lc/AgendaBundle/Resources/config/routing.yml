@@ -1,0 +1,3 @@
+lc_agenda_homepage:
+    path:     /
+    defaults: { _controller: LcAgendaBundle:Default:index }
