@@ -1,3 +1,6 @@
 lc_agenda_homepage:
     path:     /
     defaults: { _controller: LcAgendaBundle:Default:index }
+lc_agenda_view:
+    path:     /agenda
+    defaults: { _controller: LcAgendaBundle:Default:view }
