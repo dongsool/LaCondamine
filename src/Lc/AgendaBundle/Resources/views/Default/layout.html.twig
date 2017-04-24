@@ -1,53 +1,58 @@
 {% extends '::base.html.twig' %}
 {% block body %}
-<div class="contenu">
-    <section id="main-image">
-        <div class="wrapper">
+    <div class="contenu">
+        <section id="main-image">
+            <div class="wrapper">
+                <h3>Financez votre vocation artistique</h3>
+            </div>
+        </section>
 
-            <h3>Financez votre vocation artistique</h3>
-        </div>
-    </section>
+        <section id="steps">
+            <div class="wrapper">
+                <ul>
+                    <li id="steps-1">
+                        <h4>R.A.U</h4>
+                        <p> Nous proposons aux artistes qui rejoignent La Condamine de bénéficier pendant deux ans d’un Revenu Artistique Universel, afin de les accompagner vers leur professionnalisation</p>
+                    </li>
+                    <li id="steps-2">
+                        <h4>ACCOMPAGNEMENT</h4>
+                        <p> Bénéficiez de nos conseils en financement, marketing et communication, afin de mener à bien vos projets artistiques.</p>
+                    </li>
+                    <li id="steps-3">
+                        <h4>MASTER CLASS</h4>
+                        <p> Venez assister à nos Master Class et profitez de nos conseils en management, administration et financement. </p>
+                    </li>
+                    <div class="clear"></div>
+                </ul>
+            </div>
+        </section>
+        <section id="possibilities">
+            <div class="wrapper">
+                <article style="background-image: url(images/artiste.jpg); ">
+                    <div class="overlay">
+                        <h4> OBTENIR<br> LE R.A.U </h4>
+                        <p> <small>La Condamine propose à tous ses artistes de bénéficier du Revenu Artistique Universel.
+                                Ce salaire leur permet de se consacrer entièrement à leur projet, sans avoir à cumuler un emploi à temps plein en plus du travail artistique.</small></p>
+                        <a href=" #" class="button-2"> Plus d'infos</a>
+                    </div>
 
-    <section id="steps">
-        <div class="wrapper">
-            <ul>
-                <li id="steps-1">
-                    <h4>R.A.U</h4>
-                    <p> Nous proposons aux artistes qui rejoignent La Condamine de bénéficier pendant deux ans d’un Revenu Artistique Universel, afin de les accompagner vers leur professionnalisation</p>
-                </li>
-                <li id="steps-2">
-                    <h4>ACCOMPAGNEMENT</h4>
-                    <p> Bénéficiez de nos conseils en financement, marketing et communication, afin de mener à bien vos projets artistiques.</p>
-                </li>
-                <li id="steps-3">
-                    <h4>MASTER CLASS</h4>
-                    <p> Venez assister à nos Master Class et profitez de nos conseils en management, administration et financement. </p>
-                </li>
-                <div class="clear"></div>
-            </ul>
+                </article>
+                <article style="background-image: url(images/acco.jpg); ">
+                    <div class="overlay">
+                        <h4> ACCOMPAGNEMENT SUR MESURE </h4>
+                        <p><small> Nous offrons à tous les artistes qui nous rejoignent un accompagnement administratif
+                                spécifique et adapté à leurs besoins : aide juridique, recherche de financement, communication, aide à la diffusion des spectacles.</small></p>
+                        <a href=" #" class="button-2"> Plus d'infos</a>
+                    </div>
 
-        </div>
-    </section>
-    <section id="possibilities">
-        <div class="wrapper">
-            <article style="background-image: url(images/artiste.jpg); ">
-                <div class="overlay">
-                    <h4> OBTENIR LE R.A.U </h4>
-                    <p> <small>La Condamine propose à tous ses artistes de bénéficier du Revenu Artistique Universel. Ce salaire leur permet de se consacrer entièrement à leur projet, sans avoir à cumuler un emploi à temps plein en plus du travail artistique.</small></p>
-                    <a href=" #" class="button-2"> Plus d'infos</a>
-                </div>
-
-            </article>
-            <article style="background-image: url(images/acco.jpg); ">
-                <div class="overlay">
-                    <h4> ACCOMPAGNEMENT SUR MESURE </h4>
-                    <p><small> Nous offrons à tous les artistes qui nous rejoignent un accompagnement administratif spécifique et adapté à leurs besoins : aide juridique, recherche de financement, communication, aide à la diffusion des spectacles.</small></p>
-                    <a href=" #" class="button-2"> Plus d'infos</a>
-                </div>
-
-            </article>
-
-        </div>
-
-    </section>
-    {% endblock %}
+                </article>
+                <div class="clear"/>
+            </div>
+        </section>
+        <section id="partenaire">
+            <div class="wrapper"></div>
+            <h3> NOS PARTENAIRES</h3>
+            <img id="part" src="{{ asset('../images/par.png') }}"/>
+        </section>
+    </div>
+{% endblock %}

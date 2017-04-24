@@ -1,33 +1,27 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <link href="{{ asset('css/style.css') }}" rel='stylesheet' type='text/css' />
-    {% block stylesheets %}{% endblock %}
-    <title>La condamine</title>
-</head>
+    <head>
+        <meta charset="utf-8">
+        <link href="{{ asset('css/style.css') }}" rel='stylesheet' type='text/css' />
+        <title>La condamine</title>
+    </head>
 <body>
-<div>
-<header>
-    <div class="fix">
-    <div class="wrapper">
-        <h1> La Condamine</h1>
-        <nav>
-            <ul>
-                <li><a href="{{ path('lc_agenda_homepage') }}">Accueil</a> </li>
-                <li><a href="#">Qui somme nous?</a> </li>
-                <li><a href="#">RAU</a> </li>
-                <li><a href="{{ path('lc_agenda_view') }}">Autres</a> </li>
-            </ul>
-        </nav>
+    <div class="border">
+        <div class="fix">
+            <header>
+                <img id="logo" src="{{ asset('../images/Log.png') }}"/>
+                <nav>
+                    <ul>
+                        <li><a href="{{ path('lc_agenda_homepage') }}">Accueil</a> </li>
+                        <li><a href="#">Qui somme nous?</a> </li>
+                        <li><a href="#">RAU</a> </li>
+                        <li><a href="{{ path('lc_agenda_view') }}">Autres</a> </li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
     </div>
-    </div>
-</header>
-</div>
-<div>
-{% block body %}{% endblock %}
-</div>
-<footer></footer>
-{% block javascripts %}{% endblock %}
 </body>
+{% block body %}{% endblock %}
+<footer></footer>
 </html>
